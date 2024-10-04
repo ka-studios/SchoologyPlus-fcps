@@ -11,8 +11,8 @@ import {
     updateLastTime,
 } from "./utils/notifications";
 
-var assignmentNotificationUrl = "https://app.schoology.com/home/notifications?filter=all";
-var defaultDomain = "app.schoology.com";
+var assignmentNotificationUrl = "https://lms.fcps.edu/home/notifications?filter=all";
+var defaultDomain = "lms.fcps.edu";
 const OFFSCREEN_DOCUMENT_PATH = "/offscreen.html";
 
 async function load() {
@@ -21,7 +21,7 @@ async function load() {
     chrome.runtime.onInstalled.addListener(onInstalled);
     chrome.alarms.onAlarm.addListener(onAlarm);
 
-    let s = await chrome.storage.sync.get({ defaultDomain: "app.schoology.com" });
+    let s = await chrome.storage.sync.get({ defaultDomain: "lms.fcps.edu" });
     defaultDomain = s.defaultDomain;
     assignmentNotificationUrl = `https://${defaultDomain}/home/notifications?filter=all`;
 

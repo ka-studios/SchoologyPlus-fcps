@@ -38,9 +38,7 @@
         "contextMenus",
         "activeTab"
     ],
-    "optional_permissions": [
-        "<all_urls>"
-    ],
+    "optional_permissions": ["<all_urls>"],
     "web_accessible_resources": [
         "imgs/*",
         "lib/js/pdf.worker.js",
@@ -63,7 +61,8 @@
         {
             "matches": [
                 "https://lms.lausd.net/*",
-                "https://*.schoology.com/*"
+                "https://*.schoology.com/*",
+                "https://lms.fcps.edu/*"
             ],
             "exclude_matches": [
                 "https://*.schoology.com/login*",
@@ -81,10 +80,7 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "css": [
-                "css/all.css",
-                "css/modern/all.css"
-            ],
+            "css": ["css/all.css", "css/modern/all.css"],
             "js": [
                 "js/loader.js",
                 "js/analytics.js",
@@ -99,7 +95,8 @@
         {
             "matches": [
                 "https://lms.lausd.net/*",
-                "https://*.schoology.com/*"
+                "https://*.schoology.com/*",
+                "https://lms.fcps.edu/*"
             ],
             "exclude_matches": [
                 "https://*.schoology.com/login*",
@@ -156,13 +153,8 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "css": [
-                "css/grades.css"
-            ],
-            "js": [
-                "js/grades.js",
-                "js/course.js"
-            ],
+            "css": ["css/grades.css"],
+            "js": ["js/grades.js", "js/course.js"],
             "run_at": "document_end"
         },
         {
@@ -186,9 +178,7 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "css": [
-                "css/materials.css"
-            ],
+            "css": ["css/materials.css"],
             "js": [
                 "lib/js/pdf.js",
                 "lib/js/jquery-3.3.1.min.js",
@@ -227,20 +217,12 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/course.js",
-                "js/home.js"
-            ],
+            "js": ["js/course.js", "js/home.js"],
             "run_at": "document_end"
         },
         {
-            "matches": [
-                "https://lms.lausd.net/course/*",
-                "https://*.schoology.com/course/*"
-            ],
-            "js": [
-                "js/course.js"
-            ],
+            "matches": ["https://lms.lausd.net/course/*", "https://*.schoology.com/course/*"],
+            "js": ["js/course.js"],
             "run_at": "document_end"
         },
         {
@@ -250,16 +232,11 @@
                 "https://*.schoology.com/api",
                 "https://*.schoology.com/api/*"
             ],
-            "js": [
-                "js/api-key.js"
-            ],
+            "js": ["js/api-key.js"],
             "run_at": "document_end"
         },
         {
-            "matches": [
-                "https://lms.lausd.net/user/*",
-                "https://*.schoology.com/user/*"
-            ],
+            "matches": ["https://lms.lausd.net/user/*", "https://*.schoology.com/user/*"],
             "exclude_matches": [
                 "https://*.schoology.com/login*",
                 "https://*.schoology.com/register*",
@@ -276,12 +253,8 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/user.js"
-            ],
-            "css": [
-                "css/user.css"
-            ],
+            "js": ["js/user.js"],
+            "css": ["css/user.css"],
             "run_at": "document_end"
         },
         {
@@ -305,16 +278,11 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/assessment.js"
-            ],
+            "js": ["js/assessment.js"],
             "run_at": "document_end"
         },
         {
-            "matches": [
-                "https://lms.lausd.net/page/*",
-                "https://*.schoology.com/page/*"
-            ],
+            "matches": ["https://lms.lausd.net/page/*", "https://*.schoology.com/page/*"],
             "exclude_matches": [
                 "https://*.schoology.com/login*",
                 "https://*.schoology.com/register*",
@@ -331,9 +299,7 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/page.js"
-            ],
+            "js": ["js/page.js"],
             "run_at": "document_end"
         },
         {
@@ -359,17 +325,11 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/course.js",
-                "js/courses.js"
-            ],
+            "js": ["js/course.js", "js/courses.js"],
             "run_at": "document_end"
         },
         {
-            "matches": [
-                "https://lms.lausd.net/*",
-                "https://*.schoology.com/*"
-            ],
+            "matches": ["https://lms.lausd.net/*", "https://*.schoology.com/*"],
             "exclude_matches": [
                 "https://*.schoology.com/login*",
                 "https://*.schoology.com/register*",
@@ -386,9 +346,7 @@
                 "*://schoology.com/*",
                 "*://lti-submission-google.app.schoology.com/*"
             ],
-            "js": [
-                "js/all-idle.js"
-            ],
+            "js": ["js/all-idle.js"],
             "run_at": "document_idle"
         }
     ]
